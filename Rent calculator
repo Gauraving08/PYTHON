@@ -1,0 +1,24 @@
+#input we need from user
+#total rent
+#mess
+#electricity units spend
+#charge per unit
+#output
+#total amount to pay
+#how many person living
+
+
+rent = int(input("Enter your flat rent "))
+food = int(input("Enter the amount for mess"))
+electricity_spend=int(input("Enter the total of electricity Spend "))
+charge_per_unit = int(input("Enter th charge per unit= "))
+persons_living=int(input("enter the number of persons "))
+
+total_bill = electricity_spend * charge_per_unit
+
+total_cost = total_bill + food + rent
+
+amount_to_pay = total_cost//persons_living
+
+print("The amount each person pays is ",amount_to_pay)
+ 
